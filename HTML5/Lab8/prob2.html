@@ -1,0 +1,77 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="height=device-height,width=device-width,user-scalable=no" />
+        <meta charset="UTF-8">
+        <title>New Form Elements</title>
+    </head>
+    <body>
+        <center>
+        <table border="1" style="background-color: skyblue">
+            <form>
+                <tr>
+                    <td>Name:*</td>
+                    <td><input type="text" name="name" minlength="15" required></td>
+                </tr>
+                <tr>
+                    <td>Password:*</td>
+                    <td><input type="password" name="password" maxlength="15" required></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:*</td>
+                    <td><input type="number" name="number" minlength="10" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:*</td>
+                    <td><input type="radio" name="gender" value="male" required>Male<br>
+                        <input type="radio" name="gender" value="female" required>Feamle
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:*</td>
+                    <td><input type="date" name="date" pattern="\d[26]{1,2}/\d[07]{1,2}/\[2019]d{4}" required></td>
+                </tr>
+                <tr>
+                    <td>Email:*</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Highest Qualification:*</td>
+                    <td>
+                        <select name="qual" required>
+                            <option value="bTech">B.Tech</option>
+                            <option value="mTech">M.Tech</option>
+                            <option value="mba">MBA</option>
+                            <option value="mca">MCA</option>
+                            <option value="msc">MSc</option>
+                            <option value="ma">MA</option>
+                            <option value="bsc">BSc</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Courses Interested in:*</td>
+                    <td><input type="checkbox" name="java" value="Java">Java
+                        <input type="checkbox" name="html5" value="html5">HTML 5
+                        <input type="checkbox" name="css3" value="css3">CSS 3
+                        <input type="checkbox" name="angular" value="angular">Angular JS
+                        <input type="checkbox" name="jquery" value="jquery">JQuery
+                    </td>
+                </tr>
+                <tr>
+                    <td>Comments:(Mention External Certification if any)</td>
+                    <td><textarea name="comment"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Upload Degree/External Certificates:*</td>
+                    <td><input type="file" name="file" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="submit information">&nbsp;<input type="reset" value="clear"></td>
+                </tr>
+            </form>
+        </table>
+    </center>
+    </body>
+</html>
